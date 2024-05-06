@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12987,7 +12987,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="J3" library="61300211121" deviceset="61300211121" device="" value="Port Current"/>
 <part name="TP1" library="5019" deviceset="5019" device="" value="UVLO_SEL"/>
 <part name="TP6" library="5019" deviceset="5019" device="" value="REF"/>
-<part name="TP9" library="5019" deviceset="5019" device="" value="AMPS_CTL"/>
 <part name="T1" library="750313355" deviceset="750313355" device="" package3d_urn="urn:adsk.eagle:package:43118352/2" value=" 750313355 "/>
 <part name="U3" library="UCC2897APW" deviceset="UCC2897APW" device=""/>
 <part name="L3" library="74435571500" deviceset="74435571500" device="" value="15uH"/>
@@ -14641,10 +14640,6 @@ RTN</text>
 <attribute name="NAME" x="114.304440625" y="86.35851875" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="114.30996875" y="81.286640625" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TP9" gate="G$1" x="101.6" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="101.595559375" y="106.68148125" size="1.778" layer="95"/>
-<attribute name="VALUE" x="96.51003125" y="101.593359375" size="1.778" layer="96"/>
-</instance>
 <instance part="P+16" gate="G$1" x="45.72" y="144.78" smashed="yes">
 <attribute name="VALUE" x="43.18" y="149.86" size="1.778" layer="96"/>
 </instance>
@@ -14841,11 +14836,8 @@ RTN</text>
 </net>
 <net name="N$31" class="0">
 <segment>
-<wire x1="99.06" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="AMPS_CTL"/>
-<pinref part="TP9" gate="G$1" pin="TP"/>
-<wire x1="101.6" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
-<junction x="101.6" y="99.06"/>
+<wire x1="99.06" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="96.52" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
 </segment>
